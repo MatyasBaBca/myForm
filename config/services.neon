@@ -1,0 +1,10 @@
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Forms\FormFactory
+
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade

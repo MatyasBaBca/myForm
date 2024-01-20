@@ -1,0 +1,35 @@
+{block content}
+
+<form n:name="myForm">
+	<div class="row">
+		<div class="col">
+			{label name, class: "form-label" /}
+			{input name}
+		</div>
+
+		<div class="col">
+			{label surname, class: "form-label" /}
+			{input surname}
+		</div>
+	</div>
+
+	{formContainer address}
+		<div class="row">
+			<div class="col">
+				{label street /}
+				{input street, class: "form-control"}
+			</div>
+			<div class="col">
+				{label city /}
+				{input city, class: "form-control"}
+			</div>
+			<div class="col">
+				{label country /}
+				{input country, class: "form-select"}
+			</div>
+		</div>
+	{/formContainer}
+
+	{input send, class: "btn btn-primary"}
+
+</form>
